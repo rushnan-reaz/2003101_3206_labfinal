@@ -21,7 +21,7 @@ protected:
     
     
     void checkDriveOutput(vehicle* v, const string& expected) {
-        buffer.str(""); // Clear the buffer
+        buffer.str(""); 
         v->drive();
         EXPECT_EQ(buffer.str(), expected + "\n");
     }
