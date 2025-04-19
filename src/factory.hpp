@@ -15,26 +15,26 @@ public:
 class car : public vehicle {
 public:
     void drive() override {
-        cout << "Driving a car" << endl;
+        cout << "car" << endl;
     }
 };
 
 class bike : public vehicle {
 public:
     void drive() override {
-        cout << "Riding a bike" << endl;
+        cout << "bike" << endl;
     }
 };
 
 class truck : public vehicle {
 public:
     void drive() override {
-        cout << "Driving a truck" << endl;
+        cout << "truck" << endl;
     }
 };
 
 
-class vehicle_factory {
+class VehicleFactory {
 public:
     
     static vehicle* create_vehicle(const string& type) {

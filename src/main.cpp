@@ -5,7 +5,7 @@ using namespace std;
 
 
 int main() {
-    vehicle* myCar = vehicle_factory::create_vehicle("car");
+    vehicle* myCar = VehicleFactory::create_vehicle("car");
     if (myCar) {
         myCar->drive();
         delete myCar;
@@ -13,7 +13,7 @@ int main() {
         cout << "Unknown vehicle type" << endl;
     }
 
-    vehicle* mybike = vehicle_factory::create_vehicle("bike");
+    vehicle* mybike = VehicleFactory::create_vehicle("bike");
     if (mybike) {
         mybike->drive();
         delete mybike;
@@ -21,7 +21,7 @@ int main() {
         cout << "Unknown vehicle type" << endl;
     }
 
-    vehicle* myTruck = vehicle_factory::create_vehicle("truck");
+    vehicle* myTruck = VehicleFactory::create_vehicle("truck");
     if (myTruck) {
         myTruck->drive();
         delete myTruck;
